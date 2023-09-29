@@ -1,0 +1,8 @@
+.text {
+  text-align: center;
+}
+
+.hidden {
+  visibility: 0;
+  padding-bottom: 50px;
+}

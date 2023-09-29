@@ -1,0 +1,17 @@
+.main {
+  background-color: #ffffff9a;
+  margin: 80px 10%;
+  /* padding: 20px 30px; */
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.2);
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 568px) {
+  .main {
+    padding: 20px 30px;
+  }
+}
