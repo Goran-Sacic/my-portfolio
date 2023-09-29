@@ -1,6 +1,6 @@
 .home {
-  padding-top: 18em;
-  padding-bottom: 22em;
+  padding-top: 13em;
+  padding-bottom: 13em;
   display: flex;
   flex-direction: column;
   animation: fadeIn 2s;

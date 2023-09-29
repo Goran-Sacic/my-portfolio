@@ -8,7 +8,7 @@ export default function ProjectDetails({ title, myProjects }) {
   return (
     <section id="projects" className={styles["section-padding"]}>
       <div className={`${styles["projects-wrapper"]} ${styles.flex}`}>
-        <h1>Izdvojeni projekti:</h1>
+        <h1>Izdvojeni demo projekti:</h1>
         {myProjects.map((project) => (
           <div
             key={project.id}

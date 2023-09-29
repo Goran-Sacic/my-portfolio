@@ -3,6 +3,7 @@ import styles from "./SkillDetails.module.css";
 
 import Title from "./Title";
 export default function SkillDetails({
+  id,
   title,
   technologies,
   frameworks,
@@ -12,7 +13,7 @@ export default function SkillDetails({
   return (
     <section className={styles["section-padding"]}>
       <div className={styles["skills-table"]}>
-        <Title title={title} />
+        <Title id={id} title={title} />
         <div className={styles["skills-table-populated"]}>
           <div className={styles["skills-table-row"]}>
             <h2>Tehnologije</h2>

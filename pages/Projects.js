@@ -3,6 +3,7 @@ import GoGoFood from "../images/GoGoFood.png";
 import ChatApp from "../images/ChatApp.png";
 import ExpensesApp from "../images/ExpensesApp.png";
 import KalkulatorUlaganja from "../images/KalkulatorUlaganja.png";
+import MyPortfolio from "../images/MyPortfolio.png";
 import Netlify from "../logos/Netlify.png";
 import GitHubLogoWide from "../logos/GitHub logo wide.png";
 
@@ -58,7 +59,7 @@ const myProjects = [
     button: "DEMO",
     buttonImg: Netlify,
     buttonImgAlt: "Netlify logo, sličica i tekst",
-    tehnologije: "ReactJS, Firebase",
+    tehnologije: "ReactJS, Firebase backend",
   },
   {
     id: "React Events",
@@ -76,10 +77,15 @@ const myProjects = [
   {
     id: "Porfolio page",
     name: "Porfolio page",
-    /* image: MyPortfolio, */
+    image: MyPortfolio,
     alt: "Moj portfolio",
     description:
       "Ovaj portfolio rađen je koristeći NextJS tehnologiju i Firebase backend. Kod je dostupan na GitHub-u.",
+    link: "https://github.com/Goran-Sacic/my-portfolio",
+    button: "GitHub code",
+    buttonImg: GitHubLogoWide,
+    buttonImgAlt: "GitHub tekstualni logo",
+    tehnologije: "NextJS, Firebase backend",
   },
 ];
 

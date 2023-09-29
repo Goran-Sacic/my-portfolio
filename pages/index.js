@@ -20,8 +20,8 @@ export default function HomePage() {
       </Head>
       <main className={`${styles.content} ${styles.main}`}>
         <Home />
-        <ImageGallery />
         <Skills />
+        <ImageGallery />
         <Projects />
         <Contact />
       </main>

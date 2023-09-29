@@ -105,12 +105,12 @@ const images = [
 ];
 
 const title = "Tko sam zapravo ja?";
-const id = "about";
+/* const id = "about"; */
 
 function ImageGallery() {
   return (
     <div>
-      <Title id={id} title={title} />
+      <Title /* id={id}  */ title={title} />
       <ImageDetails images={images} />
     </div>
   );

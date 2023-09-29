@@ -3,6 +3,9 @@ import Link from "next/link";
 import Title from "./Title";
 import styles from "./ContactForm.module.css";
 
+import { doc, setDoc } from "firebase/firestore";
+import db from "./Firebase";
+
 const questions = [
   {
     id: "1",
@@ -34,8 +37,6 @@ const questions = [
   },
 ];
 
-/* var question = questions[Math.floor(Math.random() * questions.length)]; */
-
 export default function ContactForm({ id, title }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -43,6 +44,12 @@ export default function ContactForm({ id, title }) {
   const [randomQuestion, setRandomQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [messageSent, setMessageSent] = useState(false);
+
+  const kontakt = {
+    name: name,
+    email: email,
+    message: message,
+  };
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * questions.length);
@@ -65,13 +72,34 @@ export default function ContactForm({ id, title }) {
     setSelectedAnswer(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (selectedAnswer === randomQuestion.answer) {
       console.log("Correct Answer!");
-      // Handle form submission logic here
-      setMessageSent(true);
+
+      try {
+        const response = await fetch(
+          "https://myportfolio-contact-6c676-default-rtdb.europe-west1.firebasedatabase.app/emails.json",
+          {
+            method: "POST",
+            body: JSON.stringify(kontakt),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        const data = await response.json();
+        console.log("Data is: " + data);
+
+        if (response.ok) {
+          setMessageSent(true);
+        } else {
+          console.error("Error:", response.status);
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
     } else {
       console.log("Incorrect Answer! Please try again.");
       setName("");
@@ -95,7 +123,7 @@ export default function ContactForm({ id, title }) {
   return (
     <div /* id="contact" */>
       <Title id={id} title={title} />
-      {messageSent ? (
+      {!messageSent ? (
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Ime i prezime</label>

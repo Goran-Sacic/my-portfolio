@@ -69,11 +69,13 @@ const other = [
   },
 ];
 
-const title = "Vještine";
+const title = "Frontend vještine";
+const id = "about";
 
 export default function Skills() {
   return (
     <SkillDetails
+      id={id}
       title={title}
       technologies={technologies}
       frameworks={frameworks}
