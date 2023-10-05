@@ -187,3 +187,28 @@
     text-align: center;
   }
 }
+
+@media (max-width: 444px) {
+  .frontend {
+    width: 100%;
+    font-size: 65px;
+  }
+  .home h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 366px) {
+  .frontend {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 334px) {
+  .frontend {
+    font-size: 45px;
+  }
+  .home h2 {
+    font-size: 25px;
+  }
+}
