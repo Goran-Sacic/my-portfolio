@@ -21,10 +21,18 @@ function Impressum() {
             <h3>SOCIALS</h3>
             <div>
               <Link href="https://www.linkedin.com/in/goran-sa%C4%8Di%C4%87-b6b4351a7/">
-                <Image src={LinkedIn_white} className={styles.logoImg} />
+                <Image
+                  src={LinkedIn_white}
+                  className={styles.logoImg}
+                  alt="LinkedIn logo"
+                />
               </Link>
               <Link href="https://github.com/Goran-Sacic">
-                <Image src={Github_black} className={styles.logoImg} />
+                <Image
+                  src={Github_black}
+                  className={styles.logoImg}
+                  alt="GitHub logo"
+                />
               </Link>
             </div>
           </div>

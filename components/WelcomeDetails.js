@@ -50,7 +50,11 @@ export default function WelcomeDetails() {
             </span>
           ))}
         </div>
-        <Image src={FrontendDeveloper} className={styles.frontendImg} />
+        <Image
+          src={FrontendDeveloper}
+          className={styles.frontendImg}
+          alt="Frontend developer tools"
+        />
         <div>
           <p>
             Moja misija je izrada vrhunskih sučelja koja pružaju sjajno

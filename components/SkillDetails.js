@@ -68,7 +68,11 @@ export default function SkillDetails({
             ))}
           </div>
         </div>
-        <Image src={DigitalMarketing_SEO} className={styles.img} />
+        <Image
+          src={DigitalMarketing_SEO}
+          className={styles.img}
+          alt="Digital marketing and SEO icons"
+        />
       </div>
     </section>
   );
