@@ -7,7 +7,7 @@ import MyPortfolio from "../images/MyPortfolio.png";
 import Netlify from "../logos/Netlify.png";
 import GitHubLogoWide from "../logos/GitHub logo wide.png";
 import Playart from "../images/Playart.png";
-import PlayartLogo from "../logos/PlayArt.jpg";
+/* import PlayartLogo from "../logos/PlayArt.jpg"; */
 
 import ProjectDetails from "../components/ProjectDetails";
 
