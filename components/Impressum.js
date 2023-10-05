@@ -1,5 +1,5 @@
 import styles from "./Impressum.module.css";
-import GithubBlack from "../logos/Github_black.png";
+import GithubBlack from "../logos/GithubBlack.png";
 import LinkedIn_white from "../logos/LinkedIn_white.png";
 
 import Image from "next/image";

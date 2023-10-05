@@ -54,6 +54,7 @@ export default function WelcomeDetails() {
           src={FrontendDeveloper}
           className={styles.frontendImg}
           alt="Frontend developer tools"
+          priority={true}
         />
         <div>
           <p>
