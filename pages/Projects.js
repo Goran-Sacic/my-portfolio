@@ -87,7 +87,7 @@ const myProjects = [
     button: "GitHub code",
     buttonImg: GitHubLogoWide,
     buttonImgAlt: "GitHub tekstualni logo",
-    tehnologije: "NextJS, Firebase hosting, EmailJS integracija",
+    tehnologije: "NextJS, Vercel hosting, EmailJS",
   },
 ];
 
