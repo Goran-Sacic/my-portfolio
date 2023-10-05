@@ -1,0 +1,74 @@
+.impressumWrapper {
+  background-color: #000000;
+  margin: 80px 10%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.2);
+  max-width: 85rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.objectsWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 568px) {
+  .impressumWrapper {
+    padding: 20px 30px;
+  }
+}
+
+.objectWrapper {
+  width: 30%;
+  font-size: 16px;
+}
+
+.objectWrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+  font-size: 16px;
+}
+
+.hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copyright {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.logoImg {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1017px) {
+  .objectWrapper {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .objectWrapper {
+    width: 50%;
+  }
+}

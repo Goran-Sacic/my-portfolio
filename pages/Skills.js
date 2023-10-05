@@ -69,7 +69,7 @@ const other = [
   },
 ];
 
-const title = "Frontend vještine";
+const title = "Vještine";
 const id = "about";
 
 export default function Skills() {

@@ -1,3 +1,4 @@
+import Impressum from "@/components/Impressum";
 import Layout from "@/components/UI/Layout";
 import "@/styles/globals.css";
 import { Lato } from "@next/font/google";
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Impressum />
     </main>
   );
 }

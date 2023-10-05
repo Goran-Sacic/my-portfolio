@@ -6,6 +6,8 @@ import KalkulatorUlaganja from "../images/KalkulatorUlaganja.png";
 import MyPortfolio from "../images/MyPortfolio.png";
 import Netlify from "../logos/Netlify.png";
 import GitHubLogoWide from "../logos/GitHub logo wide.png";
+import Playart from "../images/Playart.png";
+import PlayartLogo from "../logos/PlayArt.jpg";
 
 import ProjectDetails from "../components/ProjectDetails";
 
@@ -80,53 +82,38 @@ const myProjects = [
     image: MyPortfolio,
     alt: "Moj portfolio",
     description:
-      "Ovaj portfolio rađen je koristeći NextJS tehnologiju i Firebase backend. Kod je dostupan na GitHub-u.",
+      "Ovaj portfolio rađen je koristeći NextJS framework. Kôd je dostupan na GitHub-u.",
     link: "https://github.com/Goran-Sacic/my-portfolio",
     button: "GitHub code",
     buttonImg: GitHubLogoWide,
     buttonImgAlt: "GitHub tekstualni logo",
-    tehnologije: "NextJS, Firebase backend",
+    tehnologije: "NextJS, Firebase hosting, EmailJS integracija",
+  },
+];
+
+const myOtherProjects = [
+  {
+    id: "PlayArt",
+    name: "PlayArt rođendaonica",
+    image: Playart,
+    alt: "Playart rođendaonica",
+    description: "Web stranica PlayArt rođendaonica izrađena u Wordpressu.",
+    link: "https://www.playart.com.hr/",
+    button: "PlayArt",
+    /* buttonImg: PlayartLogo,
+    buttonImgAlt: "PlayArt rođendaonica logo", */
+    tehnologije: "Wordpress",
   },
 ];
 
 const title = "Izdvojeni projekti:";
 
 export default function Projects() {
-  return <ProjectDetails title={title} myProjects={myProjects} />;
-}
-
-{
-  /* <section id="projects" className={styles["section-padding"]}>
-      <div
-        id="projects"
-        className={`${styles["projects-wrapper"]} ${styles.flex}`}
-      >
-        <h1>Izdvojeni projekti:</h1>
-        {myProjects.map((project) => (
-          <div
-            key={project.id}
-            className={`${styles["project-wrapper"]} ${styles.flex}`}
-          >
-            <div
-              className={`${styles["project-image-wrapper"]} ${styles.flex} `}
-            >
-              <Link href={project.link}>
-                <Image src={project.image} alt={project.alt} />
-              </Link>
-            </div>
-            <div
-              className={`${styles["project-description-wrapper"]} ${styles.flex}`}
-            >
-              <h2>{project.name}</h2>
-              <p>{project.description}</p>
-              <p>Tehnologije: {project.tehnologije}</p>
-              <Link href={project.link}>
-                <button className={styles.btn}>{project.button}</button>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
- */
+  return (
+    <ProjectDetails
+      title={title}
+      myProjects={myProjects}
+      myOtherProjects={myOtherProjects}
+    />
+  );
 }

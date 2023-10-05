@@ -10,13 +10,13 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Portfolio - Goran S.</title>
+        <title>Goran Sačić - Frontend Developer</title>
         <meta
           name="description"
-          content="portfolio stranica frontend developer Goran Sačić"
+          content="Portfolio website frontend developer Goran Sačić"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={`${styles.content} ${styles.main}`}>
         <Home />

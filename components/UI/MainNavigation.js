@@ -8,9 +8,6 @@ function MainNavigation() {
   const [openNav, setOpenNav] = useState(false);
   const [ariaExpanded, setAriaExpanded] = useState(false);
   const [disableAnimations, setDisableAnimations] = useState(false);
-  const [offset, setOffset] = useState(0);
-
-  /* const [headerStyle, setHeaderStyle] = useState(false); */
 
   const handleNavOpen = () => {
     setOpenNav(!openNav);
@@ -34,22 +31,6 @@ function MainNavigation() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.scrollY);
-    };
-
-    /* if (offset > 0) {
-      setHeaderStyle(true);
-      console.log("Header style je: " + headerStyle);
-    } else {
-      setHeaderStyle(false);
-      "Header style je: " + headerStyle;
-    } */
-  }, []);
-
-  /* console.log(offset); */
 
   return (
     <header className={`${styles.flex} ${styles["primary-header"]}`}>

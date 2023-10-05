@@ -1,3 +1,192 @@
 .sendUserToTop {
   scroll-behavior: smooth;
 }
+
+.formContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.formItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 1.5rem;
+}
+
+.formItem label {
+  margin: 0.2rem;
+  font-size: 22px;
+  padding-left: 0.2em;
+}
+
+.formInput,
+.formMessageInput {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.4em;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.formMessageInput {
+  height: 10rem;
+  font-family: var(--font-lato);
+  border-radius: 5px;
+}
+
+.formInput:focus,
+.formMessageInput:focus {
+  background-color: rgb(250, 190, 111);
+}
+
+.answerFeedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 35rem;
+}
+
+.answerFeedback p {
+  margin: 0.4rem;
+}
+
+.checker {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 0;
+  padding-top: 5px;
+  gap: 5rem;
+}
+
+.legend {
+  font-size: 22px;
+  padding-bottom: 0.4rem;
+  padding-top: 0.5em;
+}
+
+.btn,
+.btn2 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: transform background-color, border-color, color,
+    box-shadow, filter;
+  transition-duration: 0.2s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  width: 160px;
+  height: 46px;
+  min-width: 50px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #080808;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  margin-top: 1rem;
+
+  padding-top: 2px;
+
+  font-size: 20px;
+}
+.btn:hover,
+.btn2:hover {
+  background-color: #ffffff00;
+  border-color: #261e27;
+  box-shadow: inset 0 0 0 2px #00000000;
+  transform: scale(1.1);
+}
+
+.messageWasSent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageWasSent p {
+  font-size: 20px;
+}
+
+.btn2 {
+  font-size: 15px;
+  font-weight: 700;
+  width: 16rem;
+  margin: 2rem;
+}
+
+.buttonSpacing {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+  margin: 2rem;
+}
+
+@media (max-width: 832px) {
+  .messageWasSent div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .messageWasSent button {
+    width: 100%;
+    font-size: 14px;
+    margin: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+  }
+  .btn,
+  .btn2 {
+    font-size: 17px;
+    width: 100px;
+  }
+
+  .answerFeedback {
+    width: 100%;
+  }
+
+  .messageWasSent div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .messageWasSent button {
+    width: 80%;
+    font-size: 14px;
+    margin: 1em;
+  }
+}

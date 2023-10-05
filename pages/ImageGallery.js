@@ -12,10 +12,11 @@ import s11 from "../images/s11.jpg";
 import s12 from "../images/s12.jpg";
 import s13 from "../images/s13.jpg";
 import s14 from "../images/s14.jpg";
+import s15 from "../images/s15.png";
 
 import Title from "../components/Title";
 import ImageDetails from "../components/ImageDetails";
-import styles from "./ImageGallery.module.css";
+/* import styles from "./ImageGallery.module.css"; */
 
 const images = [
   {
@@ -97,6 +98,12 @@ const images = [
     alt: "slika mojeg kućnog ljubimca, njemačkog ovčara Maxa",
   },
   {
+    id: "synthwave1",
+    desc: "Synthwave <3",
+    img: s15,
+    alt: "Synthwave fotografija, retro stil, night city, automobil, palme, zgrade u pozadini, cartoonish stil",
+  },
+  {
     id: "its-me-3",
     desc: "I jedna ošpitna za kraj",
     img: s14,
@@ -117,9 +124,3 @@ function ImageGallery() {
 }
 
 export default ImageGallery;
-
-/* <div className={styles.text}>
-      <div id="about" className={styles.hidden}></div>
-      <h1>Tko sam ja?</h1>
-      <ImageDetails images={images} />
-    </div> */

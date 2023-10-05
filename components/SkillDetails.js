@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./SkillDetails.module.css";
 
 import Title from "./Title";
+
+import DigitalMarketing_SEO from "../images/DigitalMarketing_SEO.png";
 export default function SkillDetails({
   id,
   title,
@@ -66,6 +68,7 @@ export default function SkillDetails({
             ))}
           </div>
         </div>
+        <Image src={DigitalMarketing_SEO} className={styles.img} />
       </div>
     </section>
   );

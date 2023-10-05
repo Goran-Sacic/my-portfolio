@@ -20,12 +20,9 @@
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  /*  background-color: rgb(94, 28, 133); */
   background-color: rgba(100, 43, 115, 1);
-
   border-radius: 20px;
   box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.2);
-
   max-width: 85rem;
   margin: auto;
   margin-top: 2rem;
@@ -51,7 +48,6 @@
 .primary-header-offset a:hover,
 .primary-header-offset a:active,
 .primary-header-offset a.active {
-  /* color: rgb(217, 67, 255); */
   color: rgb(187, 31, 226);
   border-bottom-color: rgb(180, 180, 180);
   transition: color 0.3s ease, border-bottom-color 0.3s ease;

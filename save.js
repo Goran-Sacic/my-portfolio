@@ -1,8 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Title from "./Title";
 import styles from "./ContactForm.module.css";
-
-import emailjs from "@emailjs/browser";
 
 const questions = [
   {
@@ -62,8 +60,6 @@ export default function ContactForm({ id, title }) {
     email: email,
     message: message,
   };
-
-  const form = useRef();
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * questions.length);
@@ -141,6 +137,8 @@ export default function ContactForm({ id, title }) {
         setError(false);
         setHasError(false);
       }
+      /* console.log("Ima li error? --->" + error);
+      console.log("Ima li errora?? --->" + hasError); */
     }
   }, [name, email, message, emailError]);
 
@@ -171,28 +169,29 @@ export default function ContactForm({ id, title }) {
 
         setSendingMessage(true);
 
-        await emailjs
-          .sendForm(
-            "service_ettp05g",
-            "template_g3vvmzs",
-            form.current,
-            "X5tEW8VKZb3Pb1Df-"
-          )
-          .then(
-            (result) => {
-              /*  console.log(result.text); */
-
-              setMessageSent(true);
-              setName("");
-              setEmail("");
-              setMessage("");
-              setWrongAnswer(false);
-            },
-            (error) => {
-              /* console.log(error.text); */
+        /* try {
+          const response = await fetch(
+            "https://myportfolio-contact-6c676-default-rtdb.europe-west1.firebasedatabase.app/emails.json",
+            {
+              method: "POST",
+              body: JSON.stringify(kontakt),
+              headers: {
+                "Content-Type": "application/json",
+              },
             }
           );
+          const data = await response.json();
+          console.log("Poslano!");
 
+          if (response.ok) {
+            setMessageSent(true);
+            setName("");
+            setEmail("");
+            setMessage("");
+            setWrongAnswer(false);
+          } else {
+          }
+        } catch (error) {} */
         setSendingMessage(false);
       } else {
         setRandomQuestion(
@@ -236,7 +235,7 @@ export default function ContactForm({ id, title }) {
       <Title id={id} title={title} />
 
       {!messageSent ? (
-        <form ref={form} onSubmit={handleSubmit} className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <p>
             Slobodno mi pošaljite poruku koristeći obrazac u nastavku i povratno
             ću Vas kontaktirati u najkraćem mogućem roku!
@@ -246,7 +245,7 @@ export default function ContactForm({ id, title }) {
             <input
               type="text"
               id="name"
-              name="user_name"
+              name="name"
               placeholder="Ime i prezime"
               value={name}
               onChange={handleNameChange}
@@ -259,7 +258,7 @@ export default function ContactForm({ id, title }) {
             <input
               type="text"
               id="email"
-              name="user_email"
+              name="email"
               placeholder="E-pošta"
               value={email}
               onChange={handleEmailChange}
