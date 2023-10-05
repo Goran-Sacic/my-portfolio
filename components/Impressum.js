@@ -1,5 +1,5 @@
 import styles from "./Impressum.module.css";
-import GithubBlack from "../logos/GithubBlack.png";
+import gitblack from "../logos/gitblack.png";
 import LinkedIn_white from "../logos/LinkedIn_white.png";
 
 import Image from "next/image";
@@ -29,7 +29,7 @@ function Impressum() {
               </Link>
               <Link href="https://github.com/Goran-Sacic">
                 <Image
-                  src={GithubBlack}
+                  src={gitblack}
                   className={styles.logoImg}
                   alt="GitHub logo"
                 />
