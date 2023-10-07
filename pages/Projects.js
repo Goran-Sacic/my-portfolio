@@ -77,8 +77,8 @@ const myProjects = [
     tehnologije: "ReactJS, Tanstack Query, ReactRouter",
   },
   {
-    id: "Porfolio page",
-    name: "Porfolio page",
+    id: "Portfolio page",
+    name: "Portfolio page",
     image: MyPortfolio,
     alt: "Moj portfolio",
     description:
