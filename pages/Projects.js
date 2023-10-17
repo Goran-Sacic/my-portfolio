@@ -7,6 +7,7 @@ import MyPortfolio from "../images/MyPortfolio.png";
 import Netlify from "../logos/Netlify.png";
 import GitHubLogoWide from "../logos/GitHub logo wide.png";
 import Playart from "../images/Playart.png";
+import kodimon from "../images/PokemonBattle.jpg;";
 /* import PlayartLogo from "../logos/PlayArt.jpg"; */
 
 import ProjectDetails from "../components/ProjectDetails";
@@ -88,6 +89,18 @@ const myProjects = [
     buttonImg: GitHubLogoWide,
     buttonImgAlt: "GitHub tekstualni logo",
     tehnologije: "NextJS, Vercel hosting, EmailJS",
+  },
+  {
+    id: "Pokemon",
+    name: "Pokemon",
+    image: kodimon,
+    alt: "pokemon battle aplikacija",
+    description: "Pokemon battle - WIP",
+    link: "https://kodi3.vercel.app/HomePage",
+    button: "DEMO",
+    buttonImg: Netlify,
+    buttonImgAlt: "Netlify logo, sličica i tekst",
+    tehnologije: "NextJS",
   },
 ];
 
