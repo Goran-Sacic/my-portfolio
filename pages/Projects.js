@@ -7,7 +7,7 @@ import MyPortfolio from "../images/MyPortfolio.png";
 import Netlify from "../logos/Netlify.png";
 import GitHubLogoWide from "../logos/GitHub logo wide.png";
 import Playart from "../images/Playart.png";
-import kodimon from "../images/PokemonBattle.jpg;";
+import Pokemon from "../images/PokemonBattle.png";
 /* import PlayartLogo from "../logos/PlayArt.jpg"; */
 
 import ProjectDetails from "../components/ProjectDetails";
@@ -93,7 +93,7 @@ const myProjects = [
   {
     id: "Pokemon",
     name: "Pokemon",
-    image: kodimon,
+    image: Pokemon,
     alt: "pokemon battle aplikacija",
     description: "Pokemon battle - WIP",
     link: "https://kodi3.vercel.app/HomePage",
