@@ -1,9 +1,6 @@
 import s1 from "../images/s1.jpg";
 import s2 from "../images/s2.jpg";
 import s3 from "../images/s3.jpg";
-import s4 from "../images/s4.jpg";
-import s5 from "../images/s5.jpg";
-import s6 from "../images/s6.jpg";
 import s7 from "../images/s7.jpg";
 import s8 from "../images/s8.jpg";
 import s9 from "../images/s9.jpg";
@@ -13,6 +10,7 @@ import s12 from "../images/s12.jpg";
 import s13 from "../images/s13.jpg";
 import s14 from "../images/s14.jpg";
 import s15 from "../images/s15.png";
+import s16 from "../images/s16.jpg";
 
 import Title from "../components/Title";
 import ImageDetails from "../components/ImageDetails";
@@ -33,31 +31,19 @@ const images = [
   },
   {
     id: "leisure-time-1",
-    desc: "U slobodno vrijeme bavim se fotografijom!",
+    desc: "U slobodno vrijeme okinem koju fotku!",
     img: s3,
     alt: "Fotografija - zelena polja, planine, plavo nebo, sunce iza oblaka",
   },
   {
     id: "leisure-time-2",
-    desc: "Kao pravi Zagorec ponekad znam popiti...",
-    img: s4,
-    alt: "Fotografija - Goran Sačić i čaša gemišta",
-  },
-  {
-    id: "my-games-1",
-    desc: "Neke od mojih omiljenih igara...",
-    img: s5,
-    alt: "Igre: Age of Empires, Broken Sword, Skyrim, PUBG",
-  },
-  {
-    id: "my-games-2",
-    desc: "I još neke igre...",
-    img: s6,
-    alt: "Igre: Rocket League, Stellaris, Titanfall 2, Valheim",
+    desc: "Vrijeme kratim i uz dobru knjigu.",
+    img: s16,
+    alt: "Razne knjige",
   },
   {
     id: "favourite-media-1",
-    desc: "Tu i tam pogledam koji horor!",
+    desc: "Tu i tamo pogledam koji horor!",
     img: s7,
     alt: "najčešći komentar kad glediš horor: pa kam te vrag jebe",
   },

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./MainNavigation.module.css";
 import Image from "next/image";
-import logoGS from "../../logos/kruzni-ja.png";
+import logoGS from "../../logos/kruzni-ja2.png";
 import { useState, useEffect } from "react";
 
 function MainNavigation() {
