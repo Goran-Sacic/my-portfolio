@@ -283,7 +283,7 @@ export default function ContactForm({ id, title }) {
           {randomQuestion && (
             <fieldset className={styles.checker}>
               <legend className={styles.legend}>
-                Provjera znanja! {randomQuestion.question}
+                Provjera znanja (security check)! {randomQuestion.question}
               </legend>
               {randomQuestion.options.map((option, index) => (
                 <div key={index}>
