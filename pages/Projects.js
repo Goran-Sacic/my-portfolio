@@ -111,7 +111,8 @@ const myOtherProjects = [
     image: Playart,
     alt: "Playart rođendaonica",
     description: "Web stranica PlayArt rođendaonica izrađena u Wordpressu.",
-    link: "https://www.playart.com.hr/",
+    link: "https://www.goransacic.com/",
+    // link: "https://www.playart.com.hr/",
     button: "PlayArt",
     /* buttonImg: PlayartLogo,
     buttonImgAlt: "PlayArt rođendaonica logo", */
